@@ -1,0 +1,12 @@
+version: '2'
+services:
+  postgres:
+    image: postgres
+    container_name: zero
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=zero
+      - POSTGRES_USER=zero
+      - POSTGRES_PASSWORD=123
+      - MAX_CONNECTIONS=300
